@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*********************************
+primary color : #0eb582
+lightPrimary: "#f0fdfa",
+lightColor: "#777",
+lightWhite: "#eee",
+dimBlack: "#444",
+white: "#fff"
+************************************/
+
+
+@layer utilities {
+    .borderBox {
+        border: 1px solid #0eb582
+            /* primary color #0eb582 */
+    }
+}
+
+
+@layer base {
+    * {
+        transition: all 0.2s linear;
+    }
+
+    html::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    html::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background: #0eb582;
+        /* primary color #0eb582 */
+    }
+
+    body {
+        font-family: 'Nunito', sans-serif;
+    }
+}
+
+
+@layer components {
+    /* .btn1 {
+        @apply inline-block mt-2 px-7.5 py-2.5 text-lg border border-solid border-primary bg-lightPrimary text-primary cursor-pointer capitalize hover:bg-primary hover:text-white
+    } */
+
+    .btn {
+        display: inline-block;
+        border: 1px solid #0eb582;
+        /* primary color #0eb582 */
+        background: #f0fdfa;
+        /*lightPrimary: "#f0fdfa"*/
+        color: #0eb582;
+        /* primary color #0eb582 */
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+
+    .btn:hover {
+        background: #0eb582;
+        /* primary color #0eb582 */
+        color: #fff;
+    }
+
+    .btn-lg {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .customGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 20px;
+    }
+
+    /* .footerLink {
+        @apply text-[17px] px-0 py-5px block
+    } */
+    .footerLink {
+        padding: 5px 0;
+        display: block;
+        font-size: 17px;
+        line-height: 1.6;
+        color: #777;
+    }
+
+    .footerLink:hover {
+        color: #0eb582;
+        /* primary color #0eb582 */
+        text-decoration: underline;
+        transform: translateX(10px);
+    }
+}
