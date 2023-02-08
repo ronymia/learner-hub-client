@@ -14,7 +14,11 @@ lightWhite: "#eee",
 dimBlack: "#444",
 white: "#fff"
 ************************************/
+/* swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal */
 
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #0eb582;
+}
 
 @layer utilities {
     .borderBox {
