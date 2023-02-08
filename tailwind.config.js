@@ -14,7 +14,8 @@ module.exports = {
         white: "#fff"
       },
       fontFamily: {
-        grotesk: ["'Space Grotesk', sans-serif"]
+        grotesk: ["'Space Grotesk', sans-serif"],
+        russsoOne: ["'Russo One', sans-serif"],
       },
       spacing: {
         '3.6': '15px',

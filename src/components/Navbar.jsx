@@ -1,10 +1,86 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { HiMenu, HiX } from "react-icons/hi";
+import logo from '../assets/logo/logo.svg';
 
 const Navbar = () => {
-    return (
-        <div>
+    const [toggle, setToggle] = useState(false);
 
-        </div>
+    const navLink = [
+        {
+            id: 1,
+            to: '/',
+            title: 'Home'
+        },
+        {
+            id: 2,
+            to: '/About',
+            title: 'About'
+        },
+        {
+            id: 3,
+            to: '/Courses',
+            title: 'Courses'
+        },
+        {
+            id: 4,
+            to: '/Contact',
+            title: 'Contact'
+        }
+    ]
+
+    console.log(navLink)
+
+    return (
+        <header className="flex items-center justify-between px-6 md:px-28 py-2 md:py-3 bg-white drop-shadow-lg z-50 sticky top-0 left-0 right-0 backdrop-blur-sm bg-white/30">
+            {/* logo section  */}
+            <div className="flex items-center gap-5">
+                <figure className="h-8 md:h-9">
+                    <img className="h-full" src={logo} alt="logo" />
+                </figure>
+                <h2 className="capitalize text-[22px] text-dimBlack font-medium px-0 py-2.5 font-russsoOne">Learner Hub</h2>
+            </div>
+            {/* nav link  */}
+            <nav className="hidden md:flex items-center gap-4 text-lg font-grotesk">
+                {
+                    navLink.map(link =>
+                        <NavLink
+                            className={({ isActive }) => isActive ? "text-primary font-medium" : "hover:text-primary"}
+                            to={link.to}>
+                            {link.title}
+                        </NavLink>)
+                }
+                <Link className="btn py-2 px-5" to="/login">Login</Link>
+            </nav>
+
+            {/* responsive navbar      */}
+            <nav className="md:hidden">
+                <div className="text-3xl"
+                    onClick={() => setToggle(!toggle)}
+                >
+                    {
+                        toggle ? <HiX /> : <HiMenu />
+                    }
+                </div>
+                <div className={`
+                ${!toggle ? "hidden" : "flex"} bg-lightPrimary absolute right-1 z-[999] w-2/4 justify-center py-4
+                 rounded-md shadow-md shadow-primary/20`}
+                >
+                    <div className="flex flex-col items-center gap-4 text-lg font-grotesk">
+                        {
+                            navLink.map(link =>
+                                <NavLink
+                                    className={({ isActive }) => isActive ? "text-primary font-medium" : "hover:text-primary"}
+                                    to={link.to}>
+                                    {link.title}
+                                </NavLink>)
+                        }
+                        <Link className="btn py-2 px-5" to="/login">Login</Link>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
     )
 }
 
