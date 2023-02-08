@@ -1,0 +1,38 @@
+[
+    {
+        "_id": 1,
+        "subject_image": "https://i.ibb.co/w6SSdwH/subject-icon-1.png",
+        "name": "graphic design",
+        "module": "12 modules"
+    },
+    {
+        "_id": 2,
+        "subject_image": "https://i.ibb.co/mhVYwSz/subject-icon-2.png",
+        "name": "mathemetics",
+        "module": "12 modules"
+    },
+    {
+        "_id": 3,
+        "subject_image": "https://i.ibb.co/tx7fGHH/subject-icon-3.png",
+        "name": "teaching",
+        "module": "12 modules"
+    },
+    {
+        "_id": 4,
+        "subject_image": "https://i.ibb.co/ScZ7gcy/subject-icon-4.png",
+        "name": "development",
+        "module": "12 modules"
+    },
+    {
+        "_id": 5,
+        "subject_image": "https://i.ibb.co/xzZSQCm/subject-icon-5.png",
+        "name": "science",
+        "module": "12 modules"
+    },
+    {
+        "_id": 6,
+        "subject_image": "https://i.ibb.co/BqcZrrH/subject-icon-6.png",
+        "name": "engineering",
+        "module": "12 modules"
+    }
+]

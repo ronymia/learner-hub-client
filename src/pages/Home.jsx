@@ -1,10 +1,11 @@
 import React from 'react';
-import { HeroSlider } from '../components';
+import { HeroSlider, Subjects } from '../components';
 
 const Home = () => {
     return (
         <div>
             <HeroSlider />
+            <Subjects />
         </div>
     )
 }
