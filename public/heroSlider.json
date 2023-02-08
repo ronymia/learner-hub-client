@@ -1,0 +1,20 @@
+[
+    {
+        "_id": 1,
+        "slider_image": "https://i.ibb.co/tJ4T3Hs/hero-slide-1.jpg",
+        "title": "the best courses you will find find here!",
+        "summary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?"
+    },
+    {
+        "_id": 2,
+        "slider_image": "https://i.ibb.co/kctxrWP/hero-slide-2.jpg",
+        "title": "the best courses you will find find here!",
+        "summary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?"
+    },
+    {
+        "_id": 3,
+        "slider_image": "https://i.ibb.co/94QjTXW/hero-slide-3.jpg",
+        "title": "the best courses you will find find here!",
+        "summary": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?"
+    }
+]

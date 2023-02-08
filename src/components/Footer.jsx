@@ -38,7 +38,7 @@ const Footer = () => {
                 <Link className="footerLink" to="#">terms of use</Link>
             </div>
 
-            <div class="box">
+            <div className="box">
                 <h3 className="capitalize text-[22px] text-dimBlack font-medium px-0 py-2.5" >newsletter</h3>
                 <p className="text-lightColor text-md px-0 py-2.5">subscribe for latest upadates</p>
                 <form>

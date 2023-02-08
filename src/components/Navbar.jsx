@@ -14,22 +14,21 @@ const Navbar = () => {
         },
         {
             id: 2,
-            to: '/About',
+            to: '/about',
             title: 'About'
         },
         {
             id: 3,
-            to: '/Courses',
+            to: '/courses',
             title: 'Courses'
         },
         {
             id: 4,
-            to: '/Contact',
+            to: '/contact',
             title: 'Contact'
         }
     ]
 
-    console.log(navLink)
 
     return (
         <header className="flex items-center justify-between px-6 md:px-28 py-2 md:py-3 bg-white drop-shadow-lg z-50 sticky top-0 left-0 right-0 backdrop-blur-sm bg-white/30">
@@ -45,6 +44,7 @@ const Navbar = () => {
                 {
                     navLink.map(link =>
                         <NavLink
+                            key={link.id}
                             className={({ isActive }) => isActive ? "text-primary font-medium" : "hover:text-primary"}
                             to={link.to}>
                             {link.title}
@@ -70,6 +70,7 @@ const Navbar = () => {
                         {
                             navLink.map(link =>
                                 <NavLink
+                                    key={link.id}
                                     className={({ isActive }) => isActive ? "text-primary font-medium" : "hover:text-primary"}
                                     to={link.to}>
                                     {link.title}
