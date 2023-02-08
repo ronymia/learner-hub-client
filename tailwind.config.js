@@ -21,6 +21,9 @@ module.exports = {
         '3.6': '15px',
         '4.5': '17px',
         '7.5': '30px',
+      },
+      fontSize: {
+        md: '15px'
       }
     },
   },
