@@ -85,6 +85,11 @@ white: "#fff"
         font-size: 18px;
     }
 
+    .btn-sm {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
     .subjectGrid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
