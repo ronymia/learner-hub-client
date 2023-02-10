@@ -21,21 +21,22 @@ const HeroCourses = () => {
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 group">
                 {
                     heroCourseData.map(heroCourse =>
-                        <div className="bg-lightPrimary cursor-pointer relative">
+                        <div key={heroCourse._id}
+                            className="bg-lightPrimary cursor-pointer relative">
                             <div className="p-5 peer">
                                 <img className="w-full mb-4" src={heroCourse.image} alt="Course" />
                                 <h3 className="capitalize text-xl text-center text-dimBlack font-semibold">
                                     {heroCourse.title}
                                 </h3>
                             </div>
-                            <div className="absolute bg-primary text-center px-7.5 py-5  left-0 right-0 -bottom-[100%] peer-hover:bottom-0 hover:bottom-0"
+                            <div className="absolute bg-primary text-center px-7.5 py-5  left-0 right-0 -bottom-[300%] md:-bottom-[100%] peer-hover:bottom-0 hover:bottom-0"
                             >
                                 <h3 className="capitalize text-xl text-center text-white font-semibold">{heroCourse.title}
                                 </h3>
                                 <p className="py-[10px] px-0 text-lightWhite text-[15px]">
                                     {heroCourse.summary}
                                 </p>
-                                <Link className="btn btn-lg hover:bg-dimBlack" to="/courses">Read More</Link>
+                                <Link className="btn btn-sm md:btn-lg hover:bg-dimBlack" to="/courses">Read More</Link>
                             </div>
                         </div>
                     )
