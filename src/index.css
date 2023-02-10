@@ -113,4 +113,13 @@ white: "#fff"
         text-decoration: underline;
         transform: translateX(10px);
     }
+
+    .heading-link {
+        text-align: center;
+        background: url(/src/assets//images/heading-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+        width: 100%;
+    }
 }
