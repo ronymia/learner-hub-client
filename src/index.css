@@ -43,7 +43,7 @@ white: "#fff"
     }
 
     html::-webkit-scrollbar-track {
-        background: transparent;
+        background: green;
     }
 
     html::-webkit-scrollbar-thumb {
