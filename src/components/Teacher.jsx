@@ -25,8 +25,10 @@ const Teacher = () => {
             .catch(err => console.error(err));
     }, []);
 
+    console.log(teacherData)
+
     return (
-        <div>
+        <div className="py-[30px] lg:px-[10%]">
             <h1 className='text-[35px] capitalize text-dimBlack mb-[30px] block text-center'>Expert Teachers</h1>
             <>
                 <Swiper
@@ -39,10 +41,13 @@ const Teacher = () => {
                     className="mySwiper"
                 >
                     {
-                        teacherData.map(teacher => <SwiperSlide className="group">
+                        teacherData.map(teacher => <SwiperSlide
+                            key={teacher._id}
+                            className="group"
+                        >
                             <div className="relative">
                                 <img src={teacher.image} className="bg-lightPrimary group-hover:bg-primary peer" alt="" />
-                                <div className="flex flex-row items-center justify-center gap-4 bg-[rgba(0,0,0,.8)] p-[20px] cursor-pointer absolute left-0 right-0 -bottom-[100px] peer-hover:bottom-0 hover:bottom-0">
+                                <div className="flex flex-row items-center justify-center gap-4 bg-[rgba(0,0,0,.8)] p-[20px] cursor-pointer absolute left-0 right-0 -bottom-[100px] peer-hover:bottom-[35px] hover:bottom-[35px]">
                                     <Link>
                                         < FaFacebookF className="text-[30px]  my-[10] mx-[10px] text-white hover:text-primary" />
                                     </Link>
@@ -55,6 +60,10 @@ const Teacher = () => {
                                     <Link>
                                         < FaLinkedin className="text-[30px]  my-[10] mx-[10px] text-white hover:text-primary" />
                                     </Link>
+                                </div>
+                                <div className="flex flex-row items-center justify-between px-2 mt-2">
+                                    <h4>{teacher.name}</h4>
+                                    <h4>{teacher.specialty}</h4>
                                 </div>
                             </div>
                         </SwiperSlide>)
