@@ -7,7 +7,7 @@ import Teacher from '../components/Teacher';
 const About = () => {
     return (
         <section className="">
-            <PageHeader />
+            <PageHeader heading="About us" />
             <AboutSummary />
             <Teacher />
             <StudentsReview />

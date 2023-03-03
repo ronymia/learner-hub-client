@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PageHeader = () => {
+const PageHeader = ({ heading }) => {
     return (
         <div className="heading-link flex items-center justify-center">
-            <h1 className="text-4xl font-medium text-dimBlack">About Us</h1>
+            <h1 className="text-4xl font-medium text-dimBlack">{heading}</h1>
         </div >
     )
 }
