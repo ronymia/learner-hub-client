@@ -8,19 +8,19 @@ import abutIcon3 from '../assets/images/about-icon-3.png';
 const AboutSummary = () => {
     const about = [
         {
-            id: 1,
+            _id: 1,
             title: "courses",
             number: "350+",
             image: abutIcon1
         },
         {
-            id: 1,
+            _id: 2,
             title: "students",
             number: "1200+",
             image: abutIcon2
         },
         {
-            id: 1,
+            _id: 3,
             title: "awards",
             number: "10+",
             image: abutIcon3
@@ -41,7 +41,7 @@ const AboutSummary = () => {
                     {
                         about.map(ab =>
                             <div
-                                key={ab.id}
+                                key={ab._id}
                                 className="border border-primary py-[30px] px-[20px] bg-lightPrimary flex items-center justify-center mt-4"
                             >
                                 <div className='h-[130px] w-[140px] flex flex-col items-center justify-center'>
