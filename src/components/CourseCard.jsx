@@ -24,7 +24,7 @@ const CourseCard = () => {
                                         <h3 className="text-xl text-dimBlack capitalize">choose what's best for you!</h3>
                                         <p className="py-2 px-0 text-base leading-loose text-lightColor">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
 
-                                        <Link className="">read more</Link>
+                                        <Link className="btn py-2 px-5">read more</Link>
 
                                         <div className="flex flex-row items-start justify-between mt-5 pt-5 border-t border-primary">
                                              <span className="capitalize text-dimBlack text-[15px] flex flex-row gap-2 items-center justify-center">
