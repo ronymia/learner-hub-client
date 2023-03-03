@@ -44,8 +44,13 @@ const StudentsReview = () => {
                               reviewData.map(review => <SwiperSlide
                                    key={review._id}
                               >
-                                   <div className="">
-                                        <img src={review.image} className="bg-lightPrimary group-hover:bg-primary peer" alt="" />
+                                   <div className="w-full h-full flex flex-col items-center justify-center">
+                                        <p className="reviewText">
+                                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim animi atque numquam harum libero nemo, eligendi laboriosam beatae quo iure corrupti, neque rerum possimus non nisi quia! Cumque, tempora sit.
+                                        </p>
+                                        <figure className="h-[70px] w-[70px]">
+                                             <img src={review.image} className="object-cover bg-cover bg-center w-full rounded-[50%]" alt="" />
+                                        </figure>
                                    </div>
                               </SwiperSlide>)
                          }

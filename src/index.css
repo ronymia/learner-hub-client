@@ -44,8 +44,8 @@ white: "#fff"
 
 @layer utilities {
     .borderBox {
-        border: 1px solid #0eb582
-            /* primary color #0eb582 */
+        border: 1px solid #0eb582;
+        /* primary color #0eb582 */
     }
 
     .boxShadow {
@@ -143,5 +143,29 @@ white: "#fff"
         background-position: center;
         height: 20vh;
         width: 100%;
+    }
+
+    .reviewText {
+        position: relative;
+        background: #f0fdfa;
+        border: 1px solid #0eb582;
+        margin-bottom: 30px;
+        padding: 20px;
+        line-height: 2;
+        color: #777;
+        font-size: 15px;
+    }
+
+    .reviewText::before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background: #f0fdfa;
+        border-bottom: 1px solid #0eb582;
+        border-right: 1px solid #0eb582;
+        height: 20px;
+        width: 20px;
     }
 }
