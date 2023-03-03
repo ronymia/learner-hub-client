@@ -63,7 +63,7 @@ const Navbar = () => {
                     }
                 </div>
                 <div className={`
-                ${!toggle ? "hidden" : "flex"} bg-lightPrimary absolute right-1 z-[999] w-2/4 justify-center py-4
+                ${!toggle ? "hidden" : "flex"} absolute top-[300px] right-1 z-[999] w-2/4 justify-center py-4
                  rounded-md shadow-md shadow-primary/20`}
                 >
                     <div className="flex flex-col items-center gap-4 text-lg font-grotesk">
