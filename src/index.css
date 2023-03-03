@@ -168,4 +168,10 @@ white: "#fff"
         height: 20px;
         width: 20px;
     }
+
+    .courseContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
 }
