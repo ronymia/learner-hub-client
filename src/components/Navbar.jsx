@@ -76,7 +76,7 @@ const Navbar = () => {
                                     {link.title}
                                 </NavLink>)
                         }
-                        <Link className="btn py-2 px-5" to="/login">Login</Link>
+                        <Link className="btn py-2 px-5" to="/auth/login">Login</Link>
                     </div>
                 </div>
             </nav>
