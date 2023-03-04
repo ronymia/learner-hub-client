@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SocialLogin from './SocialLogin';
 
 const login = () => {
     return (
@@ -39,6 +40,8 @@ const login = () => {
                         register now
                     </Link>
                 </h3>
+                {/* social login  */}
+                <SocialLogin />
             </div>
         </section >
     )

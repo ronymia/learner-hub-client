@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SocialLogin from './SocialLogin';
 
 const Register = () => {
     return (
@@ -32,7 +33,7 @@ const Register = () => {
                     </button>
                 </form>
                 {/* navigate to login page */}
-                <h className="capitalize text-dimBlack">
+                <h3 className="capitalize text-dimBlack">
                     already have an account
                     <Link
                         to={"/auth/login"}
@@ -40,7 +41,9 @@ const Register = () => {
                     >
                         login now
                     </Link>
-                </h>
+                </h3>
+                {/* social logion */}
+                <SocialLogin />
             </div>
         </section >
     )
