@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageHeader } from '../components';
 import ContactForm from '../components/ContactForm';
+import FaqSection from '../components/FaqSection';
 import GetInTouch from '../components/GetInTouch';
 
 const Contact = () => {
@@ -9,6 +10,7 @@ const Contact = () => {
             <PageHeader heading={'Contact'} />
             <GetInTouch />
             <ContactForm />
+            <FaqSection />
         </section>
     )
 }
