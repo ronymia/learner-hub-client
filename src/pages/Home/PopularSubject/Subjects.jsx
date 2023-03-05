@@ -15,7 +15,7 @@ const Subjects = () => {
 
 
     return (
-        <section className="py-[30px] lg:px-[10%] my-12">
+        <section className="py-[30px] lg:px-[10%] md:my-12 my-3">
             <h1 className="text-center text-3xl text-dimBlack lg:text-4xl font-medium capitalize mb-[30px]">our popular subjects</h1>
             <div className="subjectGrid justify-center place-items-center">
                 {

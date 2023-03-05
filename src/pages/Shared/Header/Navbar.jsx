@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { HiMenu, HiX } from "react-icons/hi";
-import logo from '../assets/logo/logo.svg';
+// import logo 
+import logo from '../../../assets/logo/logo.svg';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
