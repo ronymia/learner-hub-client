@@ -1,8 +1,8 @@
 import React from 'react';
-import { PageHeader } from '../components';
-import AboutSummary from '../components/AboutSummary';
-import StudentsReview from '../components/StudentsReview';
-import Teacher from '../components/Teacher';
+import { PageHeader } from '../../../components';
+import AboutSummary from '../AboutSummary/AboutSummary';
+import Teacher from '../Teacher/Teacher';
+import StudentsReview from '../Testimonial/StudentsReview';
 
 const About = () => {
     return (
