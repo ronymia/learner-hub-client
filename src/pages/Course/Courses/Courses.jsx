@@ -1,5 +1,6 @@
 import React from 'react';
-import { CourseCard, PageHeader } from '../components';
+import { PageHeader } from '../../../components';
+import CourseCard from '../CourseCard/CourseCard';
 
 const Courses = () => {
     return (

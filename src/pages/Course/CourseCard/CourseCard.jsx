@@ -2,7 +2,7 @@ import React from 'react';
 import { FaBook, FaClock } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import courseImg from '../assets/images/course/course-2-1.jpg';
+import courseImg from '../../../assets/images/course/course-2-1.jpg';
 
 
 const CourseCard = () => {
