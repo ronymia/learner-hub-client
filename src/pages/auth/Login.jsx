@@ -5,18 +5,18 @@ import SocialLogin from './SocialLogin';
 const login = () => {
     return (
         <section className="w-full flex flex-col items-center justify-center my-10">
-            <div className="borderBox p-5 flex flex-col items-center justify-center gap-6">
+            <div className="borderBox p-3 md:p-5 flex flex-col items-center justify-center gap-6">
                 <form className=" ">
                     <h3 className="text-[25px] uppercase text-dimBlack pb-1 block text-center">login now</h3>
                     {/* email  */}
                     <div className="flex flex-col items-start gap-1">
                         <label htmlFor="email" className="text-sm capitalize text-dimBlack font-medium">email</label>
-                        <input type="email" placeholder="your email" className="outline-none w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor" />
+                        <input type="email" placeholder="your email" className="outline-none md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor  w-[360px]" />
                     </div>
                     {/* password  */}
                     <div className="flex flex-col items-start gap-1 mt-5 mb-2">
                         <label htmlFor="password" className=" text-sm capitalize text-dimBlack font-medium">password</label>
-                        <input type="password" placeholder="your password" className="outline-none w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor" />
+                        <input type="password" placeholder="your password" className="outline-none md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor w-[360px]" />
                     </div>
                     {/* checkBox  */}
                     <div className=" flex items-center justify-between capitalize">
