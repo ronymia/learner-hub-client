@@ -32,13 +32,25 @@ const StudentsReview = () => {
                <h1 className='text-[35px] capitalize text-dimBlack mb-[30px] block text-center'>Our Students Review</h1>
                <>
                     <Swiper
-                         slidesPerView={3}
+                         // slidesPerView={1}
+                         // centeredSlides={true}
                          spaceBetween={30}
+                         grabCursor={true}
                          pagination={{
                               clickable: true,
                          }}
+                         breakpoints={{
+                              640: {
+                                   slidesPerView: 1,
+                                   spaceBetween: 20,
+                              },
+                              768: {
+                                   slidesPerView: 3,
+                                   spaceBetween: 40,
+                              }
+                         }}
                          modules={[Pagination]}
-                         className="mySwiper"
+                         className=""
                     >
                          {
                               reviewData.map(review => <SwiperSlide
