@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaAngleDown } from 'react-icons/fa';
 
-const FaqSection = () => {
+const FAQ = () => {
      const faqData = [1, 2, 3, 4, 5, 6];
 
      return (
@@ -26,4 +26,4 @@ const FaqSection = () => {
      );
 };
 
-export default FaqSection;
+export default FAQ;

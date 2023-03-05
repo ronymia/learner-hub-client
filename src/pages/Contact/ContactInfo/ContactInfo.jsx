@@ -2,7 +2,7 @@ import React from 'react';
 import { FaClock, FaPhone, FaEnvelope, FaMap } from 'react-icons/fa';
 
 
-const GetInTouch = () => {
+const ContactInfo = () => {
      const touch = [
           {
                _id: 1,
@@ -50,4 +50,4 @@ const GetInTouch = () => {
      );
 };
 
-export default GetInTouch;
+export default ContactInfo;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 //import contact img
-import contactImg from '../assets/images/contact-img.png'
+import contactImg from '../../../assets/images/contact-img.png'
 
 const ContactForm = () => {
      return (
