@@ -1,6 +1,6 @@
 import React from 'react';
-import { HeroCourses } from '../../../components';
 import Carousel from '../Carousel/Carousel';
+import Courses from '../PopularCourse/Courses';
 import Subjects from '../PopularSubject/Subjects';
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Carousel />
             <Subjects />
-            <HeroCourses />
+            <Courses />
         </div>
     );
 };

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const HeroCourses = () => {
+const Courses = () => {
     const [heroCourseData, setHeroCourseData] = useState([]);
 
     useEffect(() => {
@@ -43,7 +43,7 @@ const HeroCourses = () => {
                 }
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default HeroCourses;
+export default Courses;
