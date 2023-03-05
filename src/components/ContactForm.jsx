@@ -5,7 +5,7 @@ import contactImg from '../assets/images/contact-img.png'
 
 const ContactForm = () => {
      return (
-          <section className="grid grid-cols-2 items-center justify-center gap-6 py-[30px] lg:px-[10%]">
+          <section className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-6 py-[30px] lg:px-[10%]">
                {/* left side  */}
                <div className="">
                     <figure>

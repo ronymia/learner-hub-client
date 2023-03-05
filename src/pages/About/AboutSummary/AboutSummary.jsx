@@ -29,16 +29,16 @@ const AboutSummary = () => {
     ];
 
     return (
-        <section className="flex  justify-center gap-7 py-[30px] lg:px-[10%]">
+        <section className="flex flex-col md:flex-row justify-center gap-7 py-[30px] lg:px-[10%] px-4">
             <div className="w-full h-full">
                 <img src={aboutImg} alt="about" />
             </div>
             <div className="">
-                <h1 className="text-[30px] text-dimBlack">We Have Best Courses For You</h1>
+                <h1 className="md:text-3xl text-2xl md:text-left text-center block font-semibold text-dimBlack">We Have Best Courses For You</h1>
                 <p className='text-[15px] py-[10px] px-0 text-lightColor'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam hic magnam fugit exercitationem neque, quae laboriosam natus. Ut maxime assumenda facere ea quasi accusamus dolores delectus tempora animi, expedita iste
                 </p>
-                <div className="flex  gap-5">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
                     {
                         about.map(ab =>
                             <div

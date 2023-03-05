@@ -30,7 +30,7 @@ const Courses = () => {
 
             <>
                 <Swiper
-                    slidesPerView={2}
+                    slidesPerView={1}
                     // centeredSlides={true}
                     spaceBetween={30}
                     grabCursor={true}
@@ -39,7 +39,7 @@ const Courses = () => {
                     }}
                     breakpoints={{
                         640: {
-                            slidesPerView: 3,
+                            slidesPerView: 1,
                             spaceBetween: 20,
                         },
                         768: {
