@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 //react icons 
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 // Import Swiper React components
@@ -10,7 +11,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
-import { Link } from 'react-router-dom';
 
 
 
@@ -25,7 +25,6 @@ const Teacher = () => {
             .catch(err => console.error(err));
     }, []);
 
-    console.log(teacherData)
 
     return (
         <div className="py-[30px] lg:px-[10%]">
