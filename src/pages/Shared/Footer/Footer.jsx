@@ -8,17 +8,26 @@ const Footer = () => {
     return (
         <section className="grid grid-cols-1 px-4  gap-5 lg:grid-cols-4 py-[50px] lg:px-[10%] bg-lightPrimary pb-24">
             <div className="">
-                <div className="flex center items-center gap-5">
-                    <img className="h-[40px]" src={logo} alt="#" />
+                <div className="flex items-center gap-5">
+                    <img className="h-[40px]" src={logo} alt="logo" />
                     <h3 className="capitalize text-[22px] text-dimBlack font-medium px-0 py-[10px]">Learner Hub</h3>
                 </div>
-                <p className="text-lightColor text-[15px] px-0 py-[10px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
-                <div className="flex gap-5 mt-[10px]">
 
-                    <Link className="h-[45px] w-[45px] text-[20px] bg-primary text-white mr-1 text-center hover:bg-dimBlack flex justify-center items-center" to="#"><FaFacebookSquare className='' /></Link>
-                    <Link className="h-[45px] w-[45px] text-[20px] bg-primary text-white mr-1 text-center hover:bg-dimBlack flex justify-center items-center" to="#"><FaTwitter /></Link>
-                    <Link className="h-[45px] w-[45px] text-[20px] bg-primary text-white mr-1 text-center hover:bg-dimBlack flex justify-center items-center" to="#"><FaInstagram /></Link>
-                    <Link className="h-[45px] w-[45px] text-[20px] bg-primary text-white mr-1 text-center hover:bg-dimBlack flex justify-center items-center" to="#"><FaLinkedin /></Link>
+                <p className="text-lightColor text-[15px] px-0 py-[10px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
+
+                <div className="w-full flex flex-row gap-5 mt-[10px]">
+                    <Link className="h-[45px] w-[45px] bg-primary hover:bg-dimBlack flex justify-center items-center" to="#">
+                        <FaFacebookSquare className="text-2xl text-white" />
+                    </Link>
+                    <Link className="h-[45px] w-[45px] bg-primary hover:bg-dimBlack flex justify-center items-center" to="#">
+                        <FaTwitter className="text-2xl text-white" />
+                    </Link>
+                    <Link className="h-[45px] w-[45px] bg-primary hover:bg-dimBlack flex justify-center items-center" to="#">
+                        <FaInstagram className="text-2xl text-white" />
+                    </Link>
+                    <Link className="h-[45px] w-[45px] bg-primary hover:bg-dimBlack flex justify-center items-center" to="#">
+                        <FaLinkedin className="text-2xl text-white" />
+                    </Link>
                 </div>
             </div>
 
