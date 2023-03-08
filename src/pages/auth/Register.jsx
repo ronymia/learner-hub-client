@@ -25,8 +25,7 @@ const Register = () => {
                     toast.success('Successfully create Account');
                     navigate("/");
                 }
-            })
-            .catch(error => console.log(error))
+            }).catch(error => console.log(error));
     }
 
     // console.log(watch("email"));
