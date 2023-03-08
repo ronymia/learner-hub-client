@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { HiMenu, HiX } from "react-icons/hi";
+import { FaUserAlt } from 'react-icons/fa';
+import { useAuth } from '../../../hooks';
 // import logo 
 import logo from '../../../assets/logo/logo.svg';
 
 const Navbar = () => {
+    const { user, logOutUser } = useAuth();
     const [toggle, setToggle] = useState(false);
+
+    const handleLogOut = () => {
+        logOutUser()
+            .then(() => { })
+            .catch(error => console.error(error));
+    }
 
     const navLink = [
         {
@@ -51,7 +60,19 @@ const Navbar = () => {
                             {link.title}
                         </NavLink>)
                 }
-                <Link className="btn py-2 px-5" to="/auth/login">Login</Link>
+                <div className="">
+                    {
+                        user && user.uid ?
+
+                            <button type="button"
+                                className="btn py-2 px-5"
+                                onClick={handleLogOut}
+                            >log out</button>
+
+                            :
+                            <Link className="btn py-2 px-5" to="/auth/login">Login</Link>
+                    }
+                </div>
             </nav>
 
             {/* responsive navbar      */}
