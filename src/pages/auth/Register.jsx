@@ -1,15 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 
 import SocialLogin from './SocialLogin';
+import { useAuth } from '../../hooks/useAuth';
 
 const Register = () => {
+    const navigate = useNavigate();
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+    //auth context 
+    const { createUser } = useAuth();
 
     //form event handler
     const onSubmit = data => {
         const { email, password, confirmPassword } = data;
+
+        //createing new user
+        createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                if (user) {
+                    // reset();
+                    window.alert('Successfully create Account');
+                    navigate("/");
+                }
+            })
+            .catch(error => console.log(error))
     }
 
     // console.log(watch("email"));
