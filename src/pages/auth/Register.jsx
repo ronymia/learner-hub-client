@@ -1,27 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useForm } from "react-hook-form";
+
 import SocialLogin from './SocialLogin';
 
 const Register = () => {
+    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+
+    //form event handler
+    const onSubmit = data => {
+        const { email, password, confirmPassword } = data;
+    }
+
+    // console.log(watch("email"));
     return (
         <section className="w-full flex items-center justify-center my-10">
             <div className="borderBox p-3 md:p-5 flex flex-col items-center justify-center gap-6">
-                <form className="">
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                >
                     <h3 className="text-[25px] uppercase text-dimBlack pb-1 block text-center">register now</h3>
                     {/* email  */}
                     <div className="flex flex-col items-start gap-1">
                         <label htmlFor="email" className="text-sm capitalize text-dimBlack font-medium">email</label>
-                        <input type="email" placeholder="your email" className="outline-none w-[360px] md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor" />
+                        <input type="email"
+                            className="outline-none w-[360px] md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor"
+                            placeholder="your email"
+                            {...register("email", {
+                                required: "Please enter your email."
+                            })}
+                        />
                     </div>
                     {/* password  */}
                     <div className="flex flex-col items-start gap-1 mt-5 mb-2">
                         <label htmlFor="password" className=" text-sm capitalize text-dimBlack font-medium">password</label>
-                        <input type="password" placeholder="new password" className="outline-none w-[360px] md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor" />
+                        <input type="password"
+                            className="outline-none w-[360px] md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor"
+                            placeholder="new password"
+                            {...register("password", {
+                                required: "Please enter new password."
+                            })}
+                        />
                     </div>
                     {/* confirm password  */}
                     <div className="flex flex-col items-start gap-1 mt-5 mb-2">
                         <label htmlFor="password" className=" text-sm capitalize text-dimBlack font-medium">password</label>
-                        <input type="password" placeholder="confirm password" className="outline-none w-[360px] md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor" />
+                        <input type="password"
+                            className="outline-none w-[360px] md:w-[460px] h-14 borderBox py-3 px-4 placeholder:capitalize placeholder:text-lightColor"
+                            placeholder="confirm password"
+                            {...register("ConfirmPassword", {
+                                required: "please type same password."
+                            })}
+                        />
                     </div>
                     {/* checkBox  */}
                     <div className="flex flex-row items-center gap-2 capitalize">
