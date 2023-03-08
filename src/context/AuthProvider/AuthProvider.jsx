@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
+import { Bar } from '../../components/LoadingSpinners';
 import { auth } from '../../utility/firebase.config';
 
 
@@ -34,12 +35,12 @@ const AuthProvider = ({ children }) => {
           const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
                console.log("inside auth state change", currentUser);
                setUser(currentUser);
-               setLoading(false);
+               // setLoading(false);
           })
           return () => {
                unsubscribe();
           };
-     }, [])
+     }, []);
 
      // auth information
      const authInfo = {
