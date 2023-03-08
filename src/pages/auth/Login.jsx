@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import SocialLogin from './SocialLogin';
@@ -20,7 +21,7 @@ const Login = () => {
                 const user = result.user;
                 if (user) {
                     // reset();
-                    window.alert('Successfully create Account');
+                    toast.success('Successfully Login');
                     navigate("/");
                 }
             })

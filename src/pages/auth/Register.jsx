@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 
 import SocialLogin from './SocialLogin';
 import { useAuth } from '../../hooks/useAuth';
+import { toast } from 'react-hot-toast';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -21,7 +22,7 @@ const Register = () => {
                 const user = result.user;
                 if (user) {
                     // reset();
-                    window.alert('Successfully create Account');
+                    toast.success('Successfully create Account');
                     navigate("/");
                 }
             })
