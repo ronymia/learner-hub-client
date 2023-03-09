@@ -11,7 +11,8 @@ const Register = () => {
     //auth context 
     const { createUser } = useAuth();
     const [loginError, setLoginError] = useState('');
-    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+    const [condition, setCondition] = useState(true);
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     //form event handler
     const onSubmit = data => {
@@ -49,7 +50,7 @@ const Register = () => {
             });
     }
 
-    // console.log(watch("email"));
+    console.log({ condition });
     return (
         <section className="w-full flex items-center justify-center my-10">
             <div className="borderBox p-3 md:p-5 flex flex-col items-center justify-center gap-6">
@@ -131,10 +132,15 @@ const Register = () => {
                     </div>
                     {/* checkBox  */}
                     <div className="flex flex-row items-center gap-2 capitalize">
-                        <input type="checkbox" name="" id="remember-me" />
+                        <input type="checkbox"
+                            onClick={() => setCondition(!condition)}
+                        />
                         <span >accept terms and condition</span>
                     </div>
-                    <button type="submit" className="btn py-[10px] px-[30px] w-full mt-5 text-xl font-medium">
+                    <button type="submit"
+                        className={`btn py-[10px] px-[30px] w-full mt-5 text-xl font-medium ${condition && "bg-green-400 hover:bg-green-400 hover:text-primary"}`}
+                        disabled={condition ? true : false}
+                    >
                         register
                     </button>
                 </form>

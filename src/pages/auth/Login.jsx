@@ -115,7 +115,6 @@ const Login = () => {
                     </div>
                     <button type="submit"
                         className="btn py-[10px] px-[30px] w-full mt-5 text-xl font-medium"
-                        disabled
                     >
                         login
                     </button>
