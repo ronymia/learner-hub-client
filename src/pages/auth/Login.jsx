@@ -106,14 +106,17 @@ const Login = () => {
                         </label>
                     </div>
                     {/* checkBox  */}
-                    <div className=" flex items-center justify-between capitalize">
-                        <div className="flex items-center justify-center gap-1">
+                    <div className=" flex items-center justify-end capitalize">
+                        {/* <div className="flex items-center justify-center gap-1">
                             <input type="checkbox" name="checkBox" />
                             <span >remember me</span>
-                        </div>
+                        </div> */}
                         <Link className="hover:underline">forgot password?</Link>
                     </div>
-                    <button type="submit" className="btn py-[10px] px-[30px] w-full mt-5 text-xl font-medium">
+                    <button type="submit"
+                        className="btn py-[10px] px-[30px] w-full mt-5 text-xl font-medium"
+                        disabled
+                    >
                         login
                     </button>
                 </form>
