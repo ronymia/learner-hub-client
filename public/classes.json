@@ -1,0 +1,62 @@
+[
+     {
+          "_id": 1,
+          "image": "",
+          "subject": "Modern Physics",
+          "instructor": "ph@hero.com",
+          "seats": 5,
+          "price": 99,
+          "registrationClosed": "20  April, 2024",
+          "classStart": "1 May, 2024"
+     },
+     {
+          "_id": 2,
+          "image": "",
+          "subject": "Modern Physics",
+          "instructor": "ph@hero.com",
+          "seats": 5,
+          "price": 99,
+          "registrationClosed": "20  April, 2024",
+          "classStart": "1 May, 2024"
+     },
+     {
+          "_id": 3,
+          "image": "",
+          "subject": "Modern Physics",
+          "instructor": "ph@hero.com",
+          "seats": 5,
+          "price": 99,
+          "registrationClosed": "20  April, 2024",
+          "classStart": "1 May, 2024"
+     },
+     {
+          "_id": 4,
+          "image": "",
+          "subject": "Modern Physics",
+          "instructor": "ph@hero.com",
+          "seats": 5,
+          "price": 99,
+          "registrationClosed": "20  April, 2024",
+          "classStart": "1 May, 2024"
+     },
+     {
+          "_id": 5,
+          "image": "",
+          "subject": "Modern Physics",
+          "instructor": "ph@hero.com",
+          "seats": 5,
+          "price": 99,
+          "registrationClosed": "20  April, 2024",
+          "classStart": "1 May, 2024"
+     },
+     {
+          "_id": 6,
+          "image": "",
+          "subject": "Modern Physics",
+          "instructor": "ph@hero.com",
+          "seats": 5,
+          "price": 99,
+          "registrationClosed": "20  April, 2024",
+          "classStart": "1 May, 2024"
+     }
+]

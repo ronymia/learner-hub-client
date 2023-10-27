@@ -32,7 +32,7 @@ export default function Header() {
      const [toggle, setToggle] = useState(false);
 
      return (
-          <header className="flex items-center justify-between px-6 md:px-28 py-2 md:py-3 bg-white drop-shadow-lg z-50 sticky top-0 left-0 right-0 backdrop-blur-sm bg-white/30">
+          <header className="flex items-center justify-between px-6 md:px-20 py-2 md:py-3 bg-white drop-shadow-lg z-50 sticky top-0 left-0 right-0 backdrop-blur-sm bg-white/30">
                {/* logo section  */}
                <div className="flex items-center gap-5">
                     <figure className="h-8 md:h-9">
