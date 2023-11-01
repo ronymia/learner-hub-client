@@ -7,7 +7,7 @@ export default function Home() {
           <>
                <Banner />
                <Classes />
-               {/* <Instructors /> */}
+               <Instructors />
           </>
      )
 }

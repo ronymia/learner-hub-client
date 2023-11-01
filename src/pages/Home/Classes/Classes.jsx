@@ -23,7 +23,7 @@ export default function Classes() {
                <div className="grid grid-cols-3 justify-items-center justify-center gap-x-5 gap-y-7">
                     {
                          classes?.map(subject => (
-                              <div className="w-[370px] rounded-2xl shadow-xl px-5 py-6 grid grid-cols-1 gap-y-3"
+                              <div className="w-[370px] rounded-2xl shadow-xl px-5 py-6 grid grid-cols-1 gap-y-3 bg-lightPrimary"
                                    key={subject._id}
                               >
                                    <figure className="w-[330] h-[235]">
@@ -39,11 +39,11 @@ export default function Classes() {
                                    </div>
                                    <div className="flex flex-row items-center justify-between">
                                         <button type="button"
-                                             className="bg-[#21B573] px-2 py-1 rounded-lg text-white capitalize"
+                                             className="bg-[#21B573] px-2 py-1 rounded-lg text-white capitalize font-medium"
                                         >
                                              Enroll now
                                         </button>
-                                        <p className="text-xs">Registration Closed <br /> {subject.registrationClosed}</p>
+                                        <p className="text-xs text-[#daa520] font-medium text-center">Registration Closed <br /> {subject.registrationClosed}</p>
                                    </div>
                                    <div className="flex flex-row items-center justify-between text-[#585859]">
                                         <p>Start {subject.classStart}</p>
