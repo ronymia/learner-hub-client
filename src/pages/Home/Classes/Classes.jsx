@@ -1,20 +1,17 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import photos1 from "../../../assets/images/MorderPyschology.png";
 
 
 export default function Classes() {
-     const [classes, setClasses] = useState([]);
-     useEffect(() => {
-          axios.get('classes.json')
-               .then(res => {
-                    const data = res.data;
-                    setClasses(data);
-               })
-               .catch(err => console.error(err));
-     }, []);
 
-     console.log(classes);
+     const { data: classes } = useQuery({
+          queryKey: ["popularClasses"],
+          queryFn: async () => {
+               const { data } = await axios.get('classes.json');
+               return data;
+          }
+     });
 
 
      return (
