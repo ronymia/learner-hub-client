@@ -1,0 +1,80 @@
+[
+    {
+        "_id": 1,
+        "image": "https://i.ibb.co/rH5QPqr/teacher-1.png",
+        "name": "Jon doe",
+        "email": "ph@hero.com",
+        "role": "",
+        "classes": [
+            "physics",
+            "math",
+            "chamistry"
+        ],
+        "totalClassesTaken": "10"
+    },
+    {
+        "_id": 2,
+        "image": "https://i.ibb.co/ZLSLKNL/teacher-2.png",
+        "name": "Jon doe",
+        "email": "ph@hero.com",
+        "role": "",
+        "classes": [
+            "physics",
+            "math",
+            "chamistry"
+        ],
+        "totalClassesTaken": "10"
+    },
+    {
+        "_id": 3,
+        "image": "https://i.ibb.co/FnK4wwn/teacher-3.png",
+        "name": "Jon doe",
+        "email": "ph@hero.com",
+        "role": "",
+        "classes": [
+            "physics",
+            "math",
+            "chamistry"
+        ],
+        "totalClassesTaken": "10"
+    },
+    {
+        "_id": 4,
+        "image": "https://i.ibb.co/8rqXr9n/teacher-4.png",
+        "name": "Jon doe",
+        "email": "ph@hero.com",
+        "role": "",
+        "classes": [
+            "physics",
+            "math",
+            "chamistry"
+        ],
+        "totalClassesTaken": "10"
+    },
+    {
+        "_id": 5,
+        "image": "https://i.ibb.co/ZmhKxZz/teacher-5.png",
+        "name": "Jon doe",
+        "email": "ph@hero.com",
+        "role": "",
+        "classes": [
+            "physics",
+            "math",
+            "chamistry"
+        ],
+        "totalClassesTaken": "10"
+    },
+    {
+        "_id": 6,
+        "image": "https://i.ibb.co/f8Qd9gd/teacher-6.png",
+        "name": "Jon doe",
+        "email": "ph@hero.com",
+        "role": "",
+        "classes": [
+            "physics",
+            "math",
+            "chamistry"
+        ],
+        "totalClassesTaken": "10"
+    }
+]
