@@ -13,11 +13,11 @@ export default function Instructors() {
      });
 
      return (
-          <section className="py-[30px] lg:px-[5%]">
-               <h1 className='text-4xl text-[#413960] uppercase font-bold mb-[30px] block text-center'>
-                    our Expert Instructors
+          <section className="py-[30px] lg:px-[5%] px-5">
+               <h1 className='text-[27px] md:text-4xl text-[#413960] uppercase font-bold mb-[30px] block text-center'>
+                    Expert <span className="text-[#21B573]">Instructors</span>
                </h1>
-               <div className="grid grid-cols-3 gap-x-6 gap-y-8">
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-8">
                     {
                          instructors?.map(instructor =>
                               <div key={instructor._id}
