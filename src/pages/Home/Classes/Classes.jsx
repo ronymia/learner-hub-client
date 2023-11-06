@@ -15,12 +15,12 @@ export default function Classes() {
 
 
      return (
-          <section className="my-20 grid grid-cols-1 justify-items-center px-20">
-               <h1 className="text-4xl text-[#413960] font-bold uppercase">
+          <section className="my-20 grid grid-cols-1 justify-items-center gap-y-5 md:gap-y-10 px-20">
+               <h1 className="text-[26px] md:text-4xl text-[#413960] font-bold uppercase">
                     Popular <span className="text-[#21B573]">Classes</span>
                </h1>
 
-               <div className="grid grid-cols-3 justify-items-center justify-center gap-x-5 gap-y-7">
+               <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center justify-center gap-x-5 gap-y-7">
                     {
                          classes?.map(subject => (
                               <div className="w-[370px] rounded-2xl shadow-xl px-5 py-6 grid grid-cols-1 gap-y-3 bg-lightPrimary"
